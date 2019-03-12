@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function findMin(array) {
+            let Min = array[0];
+            for (let i = 1 ; i <array.length ; i ++) {
+                if (array[i] < Min){
+                    Min = array[i]
+                }
+            }
+            document.write(Min + '<br/>')
+        }
+        let arr1 = [3, 5, 1, 8, -3, 7, 8];
+        findMin(arr1);
+        let arr2 = [7, 12, 6, 9, 20, 56, 89];
+        findMin(arr2);
+        let arr3 = [];
+        findMin(arr3);
+        let arr4 = [0, 0, 0, 0, 0, 0];
+        findMin(arr4);
+    </script>
+</body>
+</html>
